@@ -1,17 +1,43 @@
+@font-face {
+  font-family: 'Husky Stash';
+  src: url('/Husky Stash.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Caviar Dreams';
+  src: url('/CaviarDreams.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 .root{
   padding: 100px;
-  font-family: 'FTMilky-FREE.woff2';
-  src: url('/fonts/MyFont-Regular.woff2') format('woff2');
+  font-family: 'Caviar Dreams';
   font-size: 40px;
   font-weight: 400px;
   font-style: normal;
   text-align: center;
   min-height: 200vh;
-  color: black;
-  background: whitesmoke;
+ 
+  background: transparent;
+}
+
+.title {
+  font-family: 'Husky Stash';
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 80px;
+  text-align: center;
+  -webkit-text-stroke: 2px black; /* outline thickness & color */
+  -webkit-text-fill-color: darkorange; /* text color */
 }
 
 .subtitle1 {
+  font-family: 'Caviar Dreams';
   margin-left: 200px;
   margin-right: 200px;
   font-size: 40px;
@@ -33,7 +59,7 @@
 }
 
 .links a {
-  color: darkcyan;
+  color: palevioletred;
   text-align: center;
   text-decoration: none;
 }
