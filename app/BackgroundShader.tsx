@@ -88,7 +88,7 @@ export default function BackgroundShader({ children }: BackgroundShaderProps) {
         //   vec3 color1 = vec3(t, 0.2, 0.6);
         //   vec3 color2 = vec3(0.2, 0.6, t);
           vec3 color1 = vec3(1.0, 1.0, 1.0);
-          vec3 color2 = vec3(0.0, 1.0, 1.0);
+          vec3 color2 = vec3(186.0/255.0, 1.0, 252.0/255.0);
           vec3 color3 = vec3(1.0, 243.0/255.0, 135.0/255.0);
           vec3 color4 = vec3(243.0/255.0, 189.0/255.0, 1.0);
 
