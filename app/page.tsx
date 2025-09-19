@@ -1,18 +1,19 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+export const metadata = {
+  title: "Andy Kim's Personal Website",
+  description: "My next big thing will be here!",
+  icons: {
+    icon: "/moodle_content_ui.png",
+  }
+}
+
 export default function Home() {
   const x = 10
   const randomThing : string = "hi"
   return (
     <>
-      <head>
-        <title>Andy Kim</title>
-        <meta name="description" content="Andy Kim's Personal Website" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="moodle_content_ui.png" />
-      </head>
-
       <div className={styles.root}>
         <h1>ANDY KIM</h1> 
         <p className={styles.subtitle1}>*********************************************************</p>
