@@ -2,94 +2,39 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
+  const x = 10
+  const randomThing : string = "hi"
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className={styles.root}>
+      <h1>ANDY KIM</h1> 
+      <p className={styles.subtitle1}>*********************************************************</p>
+      <p className={styles.subtitle1}>
+        welcome to my website!
+        my name is andrew (andy) kim. i am an ex-aerospace engineer-turned-software-developer/game-developer 
+        and am passionate about all things software! below are some links 
+        that will take you to some of my projects. enjoy!
+      </p>
+      <p className={styles.subtitle1}>*********************************************************</p>
+      <p className={styles.subtitle1}>links:</p>
+      <div className={styles.links}>
+        <a href="https://a-kimb0.itch.io/" target="_blank" rel="noopener noreferrer">
+          Itch.io |
+        </a>
+        <a href="https://github.com/akimb" target="_blank" rel="noopener noreferrer">
+          GitHub |
+        </a>
+        <a href="https://www.linkedin.com/in/andrewkim101/" target="_blank" rel="noopener noreferrer">
+          LinkedIn |
+        </a>
+        <a href="https://godotshaders.com/shader/futuristic-jet-thruster/" target="_blank" rel="noopener noreferrer">
+          Shaders |
+        </a>
+        <a href="Andrew Kim Technical Resume.pdf" target="_blank" rel="noopener noreferrer">
+          Resume
+        </a>
+      </div>
+      {/* <p className={styles.subtitle2}>github</p> */}
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
