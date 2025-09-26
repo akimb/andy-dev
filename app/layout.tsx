@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Andy's Personal Website",
   description: "Welcome to my personal website!",
+  icons: {
+    icon: "/moodle_content_ui.png",
+  }
 };
 
 export default function RootLayout({
