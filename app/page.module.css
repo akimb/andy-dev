@@ -76,8 +76,64 @@
   color: darkcyan;
   text-align: center;
   text-decoration: none;
+  display: inline-flex; /* ensure badge and text align vertically */
+  align-items: center;
+  gap: 0.35rem;
+  line-height: 1;
 }
 
 .links a:hover {
   text-decoration: underline;
+}
+
+.links a .newBadge,
+.links a .newBadge--pulse {
+  text-decoration: none;
+}
+
+.links a:hover .newBadge,
+.links a:hover .newBadge--pulse {
+  text-decoration: none;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  position: relative;
+}
+
+.newBadge {
+  background: red; /* accessible red */
+  color: white;
+  font-size: 1.0rem;
+  padding: 0.5rem 1.0rem;
+  border-radius: 999px;
+  margin-left: 0.25rem;
+  line-height: 1;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+  text-transform: lowercase;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important; /* ensure no underline */
+  text-underline-offset: 0 !important;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  vertical-align: middle; /* ensure it lines up with surrounding text */
+}
+
+.newBadge--pulse {
+  animation: badgePulse 3.5s ease-in-out infinite;
+  background: linear-gradient(90deg, #ff3b30, #ff9500, #ffcc00, #4cd964);
+  background-size: 400% 400%;
+}
+
+@keyframes badgePulse {
+  0% { filter: saturate(0.9) brightness(1); background-position: 0% 50%; }
+  25% { filter: saturate(1.2) brightness(1.05); background-position: 50% 50%; }
+  50% { filter: saturate(1.4) brightness(1.08); background-position: 100% 50%; }
+  75% { filter: saturate(1.2) brightness(1.05); background-position: 50% 50%; }
+  100% { filter: saturate(0.9) brightness(1); background-position: 0% 50%; }
 }

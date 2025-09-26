@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import BackgroundShader from "./BackgroundShader";
 
@@ -11,8 +10,6 @@ export const metadata = {
 }
 
 export default function Home() {
-  const x = 10
-  const randomThing : string = "hi"
   return (
     <>
       <BackgroundShader>
@@ -42,7 +39,11 @@ export default function Home() {
               Shaders |
             </a>
             <a href="Andrew Kim Technical Resume.pdf" target="_blank" rel="noopener noreferrer">
-              Resume
+              Resume |
+            </a>
+            <a href="https://www.biorxiv.org/content/10.1101/2024.08.22.609245v2" target="_blank" rel="noopener noreferrer" className={styles.link}>
+              Research Paper
+              <span className={`${styles.newBadge} ${styles["newBadge--pulse"]}`} aria-hidden="true">new!</span>
             </a>
           </div>
           {/* <p className={styles.subtitle2}>github</p> */}
