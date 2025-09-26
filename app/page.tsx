@@ -42,7 +42,7 @@ export default function Home() {
               Resume |
             </a>
             <a href="https://www.biorxiv.org/content/10.1101/2024.08.22.609245v2" target="_blank" rel="noopener noreferrer" className={styles.link}>
-              Research Paper
+              Publications
               <span className={`${styles.newBadge} ${styles["newBadge--pulse"]}`} aria-hidden="true">new!</span>
             </a>
           </div>
