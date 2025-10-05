@@ -1,13 +1,12 @@
 import styles from "./page.module.css";
 import BackgroundShader from "./BackgroundShader";
+import Links, { LinkItem } from "./components/Links";
+import Title from "./components/Title";
+import Subtitle from "./components/Subtitle";
+import { SITE_TITLE, INTRO } from "./site_descriptions";
+import Divider from "./components/Divider";
 
-export const metadata = {
-  title: "Andy Kim's Personal Website",
-  description: "My next big thing will be here!",
-  icons: {
-    icon: "/moodle_content_ui.png",
-  }
-}
+
 
 export default function Home() {
   return (
@@ -15,37 +14,21 @@ export default function Home() {
       <BackgroundShader>
         <div className={styles.root}>
           
-          <div className={styles.title}>ANDY KIM</div>
-          <p className={styles.subtitle1}>*********************************************************</p>
-          <p className={styles.subtitle1}>
-            welcome to my website!
-            my name is andrew (andy) kim. i am an ex-aerospace engineer-turned-software-developer/game-developer 
-            and am passionate about all things software! below are some links 
-            that will take you to some of my projects. enjoy!
-          </p>
-          <p className={styles.subtitle1}>*********************************************************</p>
-          <p className={styles.subtitle1}>links:</p>
-          <div className={styles.links}>
-            <a href="https://a-kimb0.itch.io/" target="_blank" rel="noopener noreferrer">
-              Itch.io |
-            </a>
-            <a href="https://github.com/akimb" target="_blank" rel="noopener noreferrer">
-              GitHub |
-            </a>
-            <a href="https://www.linkedin.com/in/andrewkim101/" target="_blank" rel="noopener noreferrer">
-              LinkedIn |
-            </a>
-            <a href="https://godotshaders.com/shader/futuristic-jet-thruster/" target="_blank" rel="noopener noreferrer">
-              Shaders |
-            </a>
-            <a href="Andrew Kim Technical Resume.pdf" target="_blank" rel="noopener noreferrer">
-              Resume |
-            </a>
-            <a href="https://www.biorxiv.org/content/10.1101/2024.08.22.609245v2" target="_blank" rel="noopener noreferrer" className={styles.link}>
-              Publications
-              <span className={`${styles.newBadge} ${styles["newBadge--pulse"]}`} aria-hidden="true">new!</span>
-            </a>
-          </div>
+          <Title text={SITE_TITLE} />
+          <Divider />
+          <Subtitle text={INTRO} />
+          <Divider />
+          <Subtitle text={'links:'} />
+          <Links
+            items={[
+              { href: "https://a-kimb0.itch.io/", label: "Itch.io", external: true },
+              { href: "https://github.com/akimb", label: "GitHub", external: true },
+              { href: "https://www.linkedin.com/in/andrewkim101/", label: "LinkedIn", external: true },
+              { href: "https://godotshaders.com/shader/futuristic-jet-thruster/", label: "Shaders", external: true },
+              { href: "Andrew Kim Technical Resume.pdf", label: "Resume", external: true },
+              { href: "https://www.biorxiv.org/content/10.1101/2024.08.22.609245v2", label: "Publications", external: true, badge: "new!" },
+            ]}
+          />
           {/* <p className={styles.subtitle2}>github</p> */}
 
         </div>
