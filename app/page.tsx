@@ -13,7 +13,6 @@ export default function Home() {
     <>
       <BackgroundShader>
         <div className={styles.root}>
-          
           <Title text={SITE_TITLE} />
           <Divider />
           <Subtitle text={INTRO} />
@@ -21,12 +20,12 @@ export default function Home() {
           <Subtitle text={'links:'} />
           <Links
             items={[
-              { href: "https://a-kimb0.itch.io/", label: "Itch.io |", external: true },
-              { href: "https://github.com/akimb", label: "GitHub |", external: true },
-              { href: "https://www.linkedin.com/in/andrewkim101/", label: "LinkedIn |", external: true },
-              { href: "https://godotshaders.com/shader/futuristic-jet-thruster/", label: "Shaders |", external: true },
-              { href: "Andrew Kim Technical Resume.pdf", label: "Resume |", external: true },
-              { href: "https://www.biorxiv.org/content/10.1101/2024.08.22.609245v2", label: "Publications", external: true, badge: "new!" },
+              { href: "https://a-kimb0.itch.io/", label: "Itch.io |" },
+              { href: "https://github.com/akimb", label: "GitHub |", },
+              { href: "https://www.linkedin.com/in/andrewkim101/", label: "LinkedIn |" },
+              { href: "https://godotshaders.com/shader/futuristic-jet-thruster/", label: "Shaders |" },
+              { href: "Andrew Kim Technical Resume.pdf", label: "Resume |" },
+              { href: "https://www.biorxiv.org/content/10.1101/2024.08.22.609245v2", label: "Publications", badge: "new!" },
             ]}
           />
         </div>

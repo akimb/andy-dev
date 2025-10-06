@@ -4,7 +4,6 @@ import styles from "../page.module.css";
 export type LinkItem = {
   href: string;
   label: string;
-  external?: boolean;
   badge?: string | null;
 }
 
@@ -15,8 +14,8 @@ export default function Links({ items }: { items: LinkItem[] }) {
         <a
           key={it.href}
           href={it.href}
-          target={it.external ? "_blank" : undefined}
-          rel={it.external ? "noopener noreferrer" : undefined}
+          target={"_blank"}
+          rel={"noopener noreferrer"}
           className={styles.link}
         >
           {it.label}
