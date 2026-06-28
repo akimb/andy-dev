@@ -28,9 +28,9 @@ export default function Home() {
               { href: "https://www.biorxiv.org/content/10.1101/2024.08.22.609245v2", label: "Publications", badge: "new!" },
             ]}
           />
-          <a>
+          <div>
             (630) 770 7120
-          </a>
+          </div>
         </div>
       </BackgroundShader>
         
